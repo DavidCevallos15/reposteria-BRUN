@@ -1,0 +1,112 @@
+# =============================================
+# Dependencias
+# =============================================
+node_modules/
+.pnp
+.pnp.js
+
+# =============================================
+# Build / Output (generados por Vite)
+# =============================================
+dist/
+dist-ssr/
+build/
+out/
+
+# =============================================
+# Variables de entorno (NUNCA subir al repo)
+# =============================================
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env*.local
+
+# =============================================
+# Vite
+# =============================================
+*.local
+vite.config.*.timestamp-*
+
+# =============================================
+# TypeScript
+# =============================================
+*.tsbuildinfo
+
+# =============================================
+# Logs
+# =============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =============================================
+# Testing - Playwright
+# =============================================
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+playwright/.auth/
+
+# =============================================
+# Caché del sistema operativo
+# =============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# =============================================
+# Editores e IDEs
+# =============================================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# =============================================
+# Agentes / AI tools (configuraciones locales)
+# =============================================
+.claude/
+.kombai/
+.specify/
+.mcp.json
+.gemini/
+
+# =============================================
+# Vercel (generado automáticamente por el CLI)
+# =============================================
+.vercel/
+
+# =============================================
+# Misceláneos
+# =============================================
+*.pem
+*.key
+*.cert
+coverage/
+.nyc_output/

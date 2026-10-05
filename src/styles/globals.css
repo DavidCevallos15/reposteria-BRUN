@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+/*
+ * Paleta tomada del logo real de Brun (granate #5E0403 + galleta #F8B55E).
+ * Mantiene la estructura de DESIGN_SPEC §3.2 (2 oscuros, 1 accent, claros cálidos).
+ */
+@theme {
+  --color-ink: #3a1513; /* granate-chocolate profundo: fondos oscuros y texto */
+  --color-cocoa: #5e0403; /* granate del logo: titulares sobre claro, hovers */
+  --color-cream: #fbf1e4; /* masa cruda: cards y secciones claras */
+  --color-paper: #fffbf5; /* blanco cálido */
+  --color-accent: #f8b55e; /* galleta del logo: CTA, precios, secciones */
+  --color-accent-deep: #e89a3a; /* borde/sombra de la galleta */
+  --color-berry: #c8423b; /* frutos rojos: sello, detalles */
+  --color-muted: #7d5a52; /* texto secundario sobre claro (AA en cream) */
+  --color-line: #ead9c4; /* bordes y divisores */
+
+  --font-display: "Anton", "Bebas Neue", sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-hand: "Caveat Brush", cursive;
+
+  --radius-card: 3rem;
+  --radius-media: 2rem;
+
+  --ease-out-brun: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --animate-spin-slow: spin-slow 10s linear infinite;
+  --animate-spin-slow-rev: spin-slow-rev 10s linear infinite;
+  --animate-float: float 5s ease-in-out infinite;
+
+  @keyframes spin-slow {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spin-slow-rev {
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-paper font-body text-ink antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  .on-light :focus-visible,
+  .on-accent :focus-visible {
+    outline-color: var(--color-cocoa);
+  }
+  html {
+    scrollbar-color: var(--color-cocoa) var(--color-cream);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+@utility text-h1 {
+  font-size: clamp(3.5rem, 2rem + 7.5vw, 9.5rem);
+  line-height: 0.86;
+  letter-spacing: -0.01em;
+}
+@utility text-h2 {
+  font-size: clamp(2.5rem, 1.2rem + 5.5vw, 6rem);
+  line-height: 1;
+}
+@utility text-statement {
+  font-size: clamp(1.25rem, 0.8rem + 2vw, 2.25rem);
+  line-height: 1.1;
+}
+@utility text-h3 {
+  font-size: clamp(1.5rem, 1.2rem + 0.8vw, 2rem);
+  line-height: 1.1;
+}
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
