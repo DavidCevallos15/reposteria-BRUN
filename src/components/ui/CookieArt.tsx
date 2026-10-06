@@ -2,7 +2,7 @@ import { useId } from 'react';
 import { cn } from '@/lib/cn';
 
 /**
- * Galleta mordida dibujada a mano en SVG, con los colores del isotipo de Brun.
+ * Galleta mordida dibujada a mano en SVG, con la paleta del sitio.
  * Sirve de ilustración de marca mientras no exista la foto recortada del cliente.
  */
 const CHIPS: Array<[number, number, number, number]> = [

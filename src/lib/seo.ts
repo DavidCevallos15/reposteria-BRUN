@@ -38,7 +38,7 @@ export function buildBakeryJsonLd() {
       '@type': 'PostalAddress',
       streetAddress: contact.street,
       addressLocality: site.city,
-      postalCode: contact.postalCode,
+      ...(contact.postalCode ? { postalCode: contact.postalCode } : {}),
       addressCountry: 'EC',
     },
     geo: { '@type': 'GeoCoordinates', latitude: contact.coords.lat, longitude: contact.coords.lng },

@@ -1,7 +1,7 @@
 import type { Feature } from '@/types';
 
-export const whyHeading = 'POR QUÉ BRUN';
-export const whyImageAlt = 'Galleta de Brun partida por la mitad';
+export const whyHeading = 'POR QUÉ DULCE ATELIER';
+export const whyImageAlt = 'Galleta de Dulce Atelier partida por la mitad';
 
 export const features: Feature[] = [
   {

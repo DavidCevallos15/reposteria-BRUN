@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /*
- * Paleta tomada del logo real de Brun (granate #5E0403 + galleta #F8B55E).
+ * Paleta: granate #5E0403 + galleta #F8B55E.
  * Mantiene la estructura de DESIGN_SPEC §3.2 (2 oscuros, 1 accent, claros cálidos).
  */
 @theme {

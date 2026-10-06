@@ -1,18 +1,17 @@
 import type { OpeningHours } from '@/types';
 
 export const contact = {
-  whatsapp: '', // TODO: 5939XXXXXXXX — no publicado
-  whatsappMessage: 'Hola Brun, quiero hacer un pedido 🍪',
-  phone: '', // TODO
+  whatsapp: '593990000000', // placeholder de demo
+  whatsappMessage: 'Hola Dulce Atelier, quiero hacer un pedido 🍪',
+  phone: '+593 99 000 0000', // placeholder de demo
   email: '', // TODO
-  rappiUrl: 'https://www.rappi.com.ec/restaurantes/42987-brun',
-  mapsUrl:
-    'https://www.google.com/maps/place/BRUN_EC/@-1.0473029,-80.4783629,17z/data=!4m6!3m5!1s0x902bf3003424398d:0xf325c8643fe3eb35!8m2!3d-1.0473029!4d-80.4783629!16s%2Fg%2F11mlspfq4z',
-  address: 'Diagonal a la Quinta San Juan, Av. 5 de Junio, Portoviejo, Ecuador',
-  street: 'Av. 5 de Junio, diagonal a la Quinta San Juan',
-  postalCode: '130150',
-  plusCode: 'XG3C+3M Portoviejo',
-  coords: { lat: -1.0473029, lng: -80.4783629 },
+  rappiUrl: 'https://www.rappi.com.ec/',
+  mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Portoviejo%2C+Manab%C3%AD',
+  address: 'Portoviejo, Manabí',
+  street: 'Portoviejo, Manabí',
+  postalCode: '',
+  plusCode: 'Ecuador',
+  coords: { lat: -1.0546, lng: -80.4545 }, // centro de Portoviejo (genérico)
   googleRating: 4.6,
   googleReviewsCount: null as number | null, // TODO
   hours: [

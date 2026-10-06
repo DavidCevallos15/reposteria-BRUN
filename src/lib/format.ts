@@ -4,8 +4,8 @@ const usd = new Intl.NumberFormat('es-EC', {
   minimumFractionDigits: 2,
 });
 
-export function formatPrice(value: number) {
-  return usd.format(value);
+export function formatPrice(value: number | string) {
+  return typeof value === 'string' ? value : usd.format(value);
 }
 
 export function formatRating(value: number) {

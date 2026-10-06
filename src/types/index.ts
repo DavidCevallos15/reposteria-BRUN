@@ -11,7 +11,7 @@ export type SectionId =
 
 export type SectionConfig = { id: SectionId; enabled: boolean; navLabel?: string };
 
-export type MenuItem = { name: string; price: number; description?: string };
+export type MenuItem = { name: string; price: number | string; description?: string };
 export type MenuCategory = { id: string; name: string; short: string; items: MenuItem[] };
 
 export type Category = { id: string; label: string; menuTarget: string; image: string };

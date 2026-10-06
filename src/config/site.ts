@@ -1,5 +1,5 @@
 export const site = {
-  name: 'Brun',
+  name: 'Dulce Atelier',
   tagline: 'Repostería Artesanal',
   city: 'Portoviejo',
   lang: 'es',

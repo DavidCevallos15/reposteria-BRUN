@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-test.describe('Landing Brun', () => {
+test.describe('Landing Dulce Atelier', () => {
   test('no hay scroll horizontal en ninguna sección', async ({ page }) => {
     await page.goto('/');
     const height = await page.evaluate(() => document.body.scrollHeight);
@@ -14,11 +14,11 @@ test.describe('Landing Brun', () => {
     }
   });
 
-  test('hero con H1 y CTA principal a Rappi (sin WhatsApp configurado)', async ({ page }) => {
+  test('hero con H1 y CTA principal a WhatsApp', async ({ page }) => {
     await page.goto('/');
     await expect(page.getByRole('heading', { level: 1, name: /galletas con mordida/i })).toBeVisible();
-    const cta = page.locator('#hero').getByRole('link', { name: /pedir por rappi/i });
-    await expect(cta).toHaveAttribute('href', /rappi\.com\.ec/);
+    const cta = page.locator('#hero').getByRole('link', { name: /pedir por whatsapp/i });
+    await expect(cta).toHaveAttribute('href', /wa\.me/);
   });
 
   test('tabs del menú funcionan con teclado', async ({ page }) => {
@@ -54,11 +54,10 @@ test.describe('Landing Brun', () => {
     await expect(dialog).toBeHidden();
   });
 
-  test('datos vacíos no se renderizan (WhatsApp, TikTok)', async ({ page }) => {
+  test('datos vacíos no se renderizan (TikTok)', async ({ page }) => {
     await page.goto('/');
-    await expect(page.locator('a[href*="wa.me"]')).toHaveCount(0);
     await expect(page.getByRole('link', { name: 'TikTok' })).toHaveCount(0);
-    await expect(page.getByRole('link', { name: 'Instagram' }).first()).toHaveAttribute('href', /brun_ec/);
+    await expect(page.getByRole('link', { name: 'Instagram' }).first()).toHaveAttribute('href', /dulceatelier/);
   });
 
   test('JSON-LD Bakery sin datos inventados', async ({ page }) => {
@@ -68,7 +67,7 @@ test.describe('Landing Brun', () => {
     expect(data['@type']).toBe('Bakery');
     expect(data.aggregateRating.ratingValue).toBe(4.6);
     expect(data.aggregateRating.reviewCount).toBeUndefined();
-    expect(data.telephone).toBeUndefined();
+    expect(data.telephone).toBe('+593 99 000 0000');
     expect(data.openingHoursSpecification).toHaveLength(1);
   });
 });

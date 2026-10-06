@@ -7,7 +7,7 @@ export const sections: SectionConfig[] = [
   { id: 'nosotros', enabled: true, navLabel: 'Nosotros' },
   { id: 'favoritos', enabled: true },
   { id: 'menu', enabled: true, navLabel: 'Menú' },
-  { id: 'por-que', enabled: true, navLabel: 'Por qué Brun' },
+  { id: 'por-que', enabled: true, navLabel: 'Por qué Atelier' },
   { id: 'resenas', enabled: true },
   { id: 'galeria', enabled: true, navLabel: 'Galería' },
   { id: 'visitanos', enabled: true, navLabel: 'Visítanos' },

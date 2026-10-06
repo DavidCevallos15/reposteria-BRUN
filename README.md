@@ -1,6 +1,6 @@
-# Brun · Repostería Artesanal
+# Dulce Atelier · Repostería Artesanal
 
-Landing de una página para **Brun**, la repostería artesanal de la Av. 5 de Junio en Portoviejo, Ecuador.
+Landing de una página de demo para **Dulce Atelier**, una repostería artesanal en Portoviejo, Ecuador (muestra de portafolio).
 
 Stack: React 18 + Vite + TypeScript strict, Tailwind CSS v4, Motion (`motion/react`). Es una SPA estática sin backend que se despliega en Vercel.
 

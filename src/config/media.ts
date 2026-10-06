@@ -1,6 +1,6 @@
 // Rutas esperadas. Los archivos los sube David (ver public/media/README.md).
 export const media = {
-  logo: '/media/brand/logo.png',
+  logo: '/media/brand/favicon.svg', // wordmark de demo; el logo se dibuja en texto (Navbar.tsx)
   heroBg: '/media/hero/hero-bg.jpg', // puede ser .mp4
   heroCookie: '/media/hero/cookie-cutout.png', // PNG transparente (si falta, se dibuja la galleta SVG)
   categories: {

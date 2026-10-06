@@ -1,6 +1,7 @@
 import type { MenuCategory } from '@/types';
 
-// fuente: Rappi oct-2026 — confirmar precios en local
+// demo de portafolio: sin precios reales
+export const PRICE_LABEL = 'Consultar';
 export const SHOW_PRICES = true;
 
 export const menu: MenuCategory[] = [
@@ -9,18 +10,18 @@ export const menu: MenuCategory[] = [
     name: 'Galletas · Caja x3',
     short: 'Caja x3',
     items: [
-      { name: 'Pistacho Frambuesa', price: 13.5 },
-      { name: 'Crema de Avellanas', price: 9.65 },
-      { name: 'Cream Cheese y Canela', price: 9.65 },
-      { name: 'Blanquitas', price: 9.65 },
-      { name: 'Limón Brûlée', price: 9.65 },
-      { name: 'Kinder', price: 11.7 },
-      { name: 'Clásicas', price: 7.75 },
-      { name: 'Doble Chocolate', price: 9.65 },
-      { name: 'Mantequilla de Maní Salpireta', price: 11.7 },
-      { name: 'Un Mix Inolvidable', price: 10.3 },
-      { name: 'El Clásico', price: 9.0 },
-      { name: 'Las Más Originales', price: 10.3 },
+      { name: 'Pistacho Frambuesa', price: PRICE_LABEL },
+      { name: 'Crema de Avellanas', price: PRICE_LABEL },
+      { name: 'Cream Cheese y Canela', price: PRICE_LABEL },
+      { name: 'Blanquitas', price: PRICE_LABEL },
+      { name: 'Limón Brûlée', price: PRICE_LABEL },
+      { name: 'Kinder', price: PRICE_LABEL },
+      { name: 'Clásicas', price: PRICE_LABEL },
+      { name: 'Doble Chocolate', price: PRICE_LABEL },
+      { name: 'Mantequilla de Maní Salpireta', price: PRICE_LABEL },
+      { name: 'Un Mix Inolvidable', price: PRICE_LABEL },
+      { name: 'El Clásico', price: PRICE_LABEL },
+      { name: 'Las Más Originales', price: PRICE_LABEL },
     ],
   },
   {
@@ -28,9 +29,9 @@ export const menu: MenuCategory[] = [
     name: 'Galletas · Caja x6',
     short: 'Caja x6',
     items: [
-      { name: 'Clásica y Cremosa', price: 20.0 },
-      { name: 'Dulce y Equilibrada', price: 19.3 },
-      { name: '3 Canela + 3 Blanquita', price: 19.3 },
+      { name: 'Clásica y Cremosa', price: PRICE_LABEL },
+      { name: 'Dulce y Equilibrada', price: PRICE_LABEL },
+      { name: '3 Canela + 3 Blanquita', price: PRICE_LABEL },
     ],
   },
   {
@@ -38,32 +39,32 @@ export const menu: MenuCategory[] = [
     name: 'Galletas mini · Caja x8',
     short: 'Mini x8',
     items: [
-      { name: 'Crema de Avellanas', price: 12.9 },
-      { name: 'Sabores Únicos', price: 13.85 },
-      { name: 'Crunch y Apetecible', price: 13.5 },
-      { name: 'Cream Cheese y Canela', price: 12.9 },
-      { name: 'Clásicas', price: 10.3 },
-      { name: 'Doble Chocolate', price: 12.9 },
+      { name: 'Crema de Avellanas', price: PRICE_LABEL },
+      { name: 'Sabores Únicos', price: PRICE_LABEL },
+      { name: 'Crunch y Apetecible', price: PRICE_LABEL },
+      { name: 'Cream Cheese y Canela', price: PRICE_LABEL },
+      { name: 'Clásicas', price: PRICE_LABEL },
+      { name: 'Doble Chocolate', price: PRICE_LABEL },
     ],
   },
   {
     id: 'mini-x12',
     name: 'Galletas mini · Caja x12',
     short: 'Mini x12',
-    items: [{ name: 'Degustación Box', price: 20.0 }],
+    items: [{ name: 'Degustación Box', price: PRICE_LABEL }],
   },
   {
     id: 'ny-rolls',
     name: 'NY Rolls',
     short: 'NY Rolls',
     items: [
-      { name: 'Pistacho', price: 7.75 },
-      { name: 'Blanquita y Frutos Rojos', price: 6.5 },
-      { name: 'Cookies and Cream', price: 6.5 },
-      { name: 'Ganache de Chocolate Semiamargo', price: 6.5 },
-      { name: 'Manjar de Olla y Crema de Queso', price: 6.5 },
-      { name: 'Jamón de Pavo', price: 9.0 },
-      { name: 'Roast Beef', price: 9.0 },
+      { name: 'Pistacho', price: PRICE_LABEL },
+      { name: 'Blanquita y Frutos Rojos', price: PRICE_LABEL },
+      { name: 'Cookies and Cream', price: PRICE_LABEL },
+      { name: 'Ganache de Chocolate Semiamargo', price: PRICE_LABEL },
+      { name: 'Manjar de Olla y Crema de Queso', price: PRICE_LABEL },
+      { name: 'Jamón de Pavo', price: PRICE_LABEL },
+      { name: 'Roast Beef', price: PRICE_LABEL },
     ],
   },
   {
@@ -71,10 +72,10 @@ export const menu: MenuCategory[] = [
     name: 'Pots cucharables',
     short: 'Pots',
     items: [
-      { name: 'Tiramisú de Milo', price: 5.5 },
-      { name: 'Cookies and Cream', price: 5.5 },
-      { name: 'Blanquita', price: 5.5 },
-      { name: 'Pie de Limón y Frutos Rojos', price: 5.5 },
+      { name: 'Tiramisú de Milo', price: PRICE_LABEL },
+      { name: 'Cookies and Cream', price: PRICE_LABEL },
+      { name: 'Blanquita', price: PRICE_LABEL },
+      { name: 'Pie de Limón y Frutos Rojos', price: PRICE_LABEL },
     ],
   },
   {
@@ -82,8 +83,8 @@ export const menu: MenuCategory[] = [
     name: 'Waffle Sticks',
     short: 'Waffle Sticks',
     items: [
-      { name: 'Dulces', price: 5.15 },
-      { name: 'Salados', price: 5.15 },
+      { name: 'Dulces', price: PRICE_LABEL },
+      { name: 'Salados', price: PRICE_LABEL },
     ],
   },
   {
@@ -91,9 +92,9 @@ export const menu: MenuCategory[] = [
     name: 'Combos',
     short: 'Combos',
     items: [
-      { name: 'Cazuela de Galleta + Helado', price: 9.0 },
-      { name: 'Combo NY', price: 15.75 },
-      { name: 'Coffee Run', price: 10.95 },
+      { name: 'Cazuela de Galleta + Helado', price: PRICE_LABEL },
+      { name: 'Combo NY', price: PRICE_LABEL },
+      { name: 'Coffee Run', price: PRICE_LABEL },
     ],
   },
   {
@@ -101,10 +102,10 @@ export const menu: MenuCategory[] = [
     name: 'Bebidas calientes',
     short: 'Calientes',
     items: [
-      { name: 'Americano', price: 2.6 },
-      { name: 'Capuccino', price: 3.25 },
-      { name: 'Mocaccino', price: 3.85 },
-      { name: 'Chocolate Caliente', price: 3.85 },
+      { name: 'Americano', price: PRICE_LABEL },
+      { name: 'Capuccino', price: PRICE_LABEL },
+      { name: 'Mocaccino', price: PRICE_LABEL },
+      { name: 'Chocolate Caliente', price: PRICE_LABEL },
     ],
   },
   {
@@ -112,15 +113,15 @@ export const menu: MenuCategory[] = [
     name: 'Bebidas frías',
     short: 'Frías',
     items: [
-      { name: 'Soda Frutos Rojos y Bubble Tea', price: 5.15 },
-      { name: 'Ice Caramel Latte', price: 4.85 },
-      { name: 'Matcha Frío', price: 5.15 },
-      { name: 'Ice Latte', price: 4.2 },
-      { name: 'Limonada de Café', price: 4.85 },
-      { name: 'Maracuyá Cream', price: 5.15 },
-      { name: 'Jamaica Naranja Bubble Tea', price: 5.15 },
-      { name: 'Ice Matcha y Frutos Rojos', price: 6.4 },
-      { name: 'Agua', price: 0.75 },
+      { name: 'Soda Frutos Rojos y Bubble Tea', price: PRICE_LABEL },
+      { name: 'Ice Caramel Latte', price: PRICE_LABEL },
+      { name: 'Matcha Frío', price: PRICE_LABEL },
+      { name: 'Ice Latte', price: PRICE_LABEL },
+      { name: 'Limonada de Café', price: PRICE_LABEL },
+      { name: 'Maracuyá Cream', price: PRICE_LABEL },
+      { name: 'Jamaica Naranja Bubble Tea', price: PRICE_LABEL },
+      { name: 'Ice Matcha y Frutos Rojos', price: PRICE_LABEL },
+      { name: 'Agua', price: PRICE_LABEL },
     ],
   },
 ];

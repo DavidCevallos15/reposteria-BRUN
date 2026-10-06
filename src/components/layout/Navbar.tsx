@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { media } from '@/config/media';
 import { site } from '@/config/site';
 import { copy } from '@/data/copy';
 import { navLinks } from '@/data/nav';
@@ -16,7 +15,18 @@ export function Logo({ className }: { className?: string }) {
       aria-label={copy.nav.home}
       className={cn('block shrink-0 overflow-hidden rounded-full bg-white ring-2 ring-accent/70', className)}
     >
-      <img src={media.logo} alt={site.name} width={56} height={56} className="size-full object-cover" />
+      <span
+        aria-hidden
+        className="font-display grid size-full place-items-center bg-cocoa px-1 text-center text-[10px] leading-[1.05] tracking-wide text-accent uppercase"
+      >
+        <span>
+          {site.name.split(' ').map((word) => (
+            <span key={word} className="block">
+              {word}
+            </span>
+          ))}
+        </span>
+      </span>
     </a>
   );
 }
